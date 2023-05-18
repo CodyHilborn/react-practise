@@ -1,5 +1,7 @@
 import React from "react";
 import ExpenseItem from "./ExpenseItem";
+import Card from "./Card";
+import "./ExpenseList.css";
 
 const ExpenseList = (props) => {
   const { expenses } = props;
@@ -14,7 +16,7 @@ const ExpenseList = (props) => {
       />
     );
   });
-  return <div className="expenses">{expenseItemArray}</div>;
+  return <Card className="expenses">{expenseItemArray}</Card>;
 };
 
 export default ExpenseList;
