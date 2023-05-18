@@ -29,7 +29,7 @@ function App() {
         id={el.id}
         title={el.title}
         amount={el.amount}
-        date={el.date.toISOString()}
+        date={el.date}
       />
     );
   });
