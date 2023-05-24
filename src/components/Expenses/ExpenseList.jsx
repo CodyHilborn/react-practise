@@ -9,7 +9,7 @@ const ExpenseList = (props) => {
   const expenseItemArray = expenses.map((el) => {
     return (
       <ExpenseItem
-        id={el.id}
+        key={el.id}
         title={el.title}
         amount={el.amount}
         date={el.date}
