@@ -34,7 +34,11 @@ const ExpenseList = (props) => {
           selected={filteredYear}
           onFilterChange={filterChangeHandler}
         />
-        {expenseItemArray}
+        {expensesByYear.length === 0 ? (
+          <p>"No expenses to display yet!"</p>
+        ) : (
+          expenseItemArray
+        )}
       </Card>
     </div>
   );
