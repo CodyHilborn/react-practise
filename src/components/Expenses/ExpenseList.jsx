@@ -35,7 +35,9 @@ const ExpenseList = (props) => {
           onFilterChange={filterChangeHandler}
         />
         {expensesByYear.length === 0 ? (
-          <p>"No expenses to display yet!"</p>
+          <h2 className="expenses-list__fallback">
+            No expenses to display yet!
+          </h2>
         ) : (
           expenseItemArray
         )}

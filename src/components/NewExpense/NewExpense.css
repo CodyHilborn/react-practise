@@ -36,3 +36,16 @@
 .new-expense button.alternative:active {
   background-color: #ddb3f8;
 }
+
+.new-expense__controls-closed {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.open-new-expense-btn {
+  text-align: center;
+}

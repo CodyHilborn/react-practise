@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "./NewExpenseForm.css";
 
 const NewExpenseForm = (props) => {
-
   const [userInput, setUserInput] = useState({
     enteredTitle: "",
     enteredAmount: "",
@@ -36,7 +35,7 @@ const NewExpenseForm = (props) => {
       amount: userInput.enteredAmount,
       date: new Date(userInput.enteredDate),
     };
-    
+
     props.onSaveExpenseData(expenseData);
 
     setUserInput({
@@ -44,7 +43,6 @@ const NewExpenseForm = (props) => {
       enteredAmount: "",
       enteredDate: "",
     });
-
   };
 
   return (
@@ -80,6 +78,9 @@ const NewExpenseForm = (props) => {
         </div>
       </div>
       <div className="new-expense__actions">
+        <button type="button" onClick={props.formClose}>
+          Cancel
+        </button>
         <button type="submit">Add Expense</button>
       </div>
     </form>
